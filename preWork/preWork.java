@@ -15,15 +15,20 @@ class preWork {
 
     public void printPattern(int num){
         
-        System.out.println("Star Pattern of size " + num + " =>");
-        int k=num;
-        for(int i=1; i<=num; i++){
-            for(int j=k;j>=1;j--){
-                System.out.print("*");
-            }  
-            k-=1;
-            System.out.println("");              
+        if(num>0){
+            System.out.println("Star Pattern of size " + num + " =>");
+            int k=num;
+            for(int i=1; i<=num; i++){
+                for(int j=k;j>=1;j--){
+                    System.out.print("*");
+                }  
+                k-=1;
+                System.out.println("");              
+            }
+        }else{
+            System.out.println("Invalid Number for pattern printing");
         }
+
     }
 
     public void checkPrime(int num){
